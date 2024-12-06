@@ -3,8 +3,6 @@ services:
     image: redis:latest
     container_name: redis-container
     hostname: host # 네트워크 내부에서의 호스트 이름
-    depends_on:
-      - db
     ports:
       - '6379:6379'
     restart: always
